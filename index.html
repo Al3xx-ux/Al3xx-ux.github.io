@@ -1,26 +1,54 @@
 <!doctype html>
 	<head>
-	<title> Alex Llinares</title>
+		<title> Alex Llinares</title>
+		
+		<style>
+		img{
+			width: 200px;
+			height: 200px;
+		}
+		h1{
+			color: #0244ff;
+			font-size: 32 px;
+			font-family: sans-serif;
+			border: 3px solid #56a1bd;
+			margin-top: 20px;
+			text-align: center;
+			
+		}
+		h2  {
+			font-family: sans-serif;
+		}
+		a{
+ 
+ 			color:#a42984 ;
+		}
+		header nav  ul{
+			display: flex;
+			justify-content: space-evenly;
+			list-style: none;
+			display: flex;
+			padding : 0;
+			margin: 0;
+		}
+		header{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+		ul{
+			list-style: square;
+		}
+		footer nav  ul{
+			display: flex;
+			justify-content: space-evenly;
+			list-style: none;
+			display: flex;
+			padding : 0;
+			margin: 0;
+			margin-top: 10px;
+		}
+		</style>
 	
-	<style>
-	img{
-		width: 200px;
-		height: 200px;
-	}
-	
-	header nav  ul{
-		display: flex;
-		justify-content: space-evenly;
-		list-style: none;
-		display: flex;
-		padding : 0;
-		margin: 0;
-	}
-	ul{
-		list-style: square;
-	}
-	
-	</style>
 	</head>
 	
 	<header>
@@ -48,18 +76,14 @@
 <body>
 	<main>
 		<h1>Bienvenido a mi página personal</h1>
-
+			<p><img src="imagen.jpg" /></p>
 		
 			<!--Presentacion-->
 
 			<article id="quiensoy">
 				<section>
-					<h2>
-					Quien soy ?
-					</h2>
-					<p><img src="imagen.jpg" /></p>
-						<p>
-						Me llamo Alex Llinares y soy estudiante de <strong>ENTI</strong> en el grado de <strong>ASIX</strong> ciberseguridad. Naci en un pueblo llamado <strog> Cadaqués</strong> y actualmente vivo en <strong>Barcelona</strong>.
+					<h2>Quien soy ?</h2>
+					<p>Me llamo Alex Llinares y soy estudiante de <strong>ENTI</strong> en el grado de <strong>ASIX</strong> ciberseguridad. Naci en un pueblo llamado <strog> Cadaqués</strong> y actualmente vivo en <strong>Barcelona</strong>.
 						Entre mis aficiones esta: 
 						<ul>
 							<li>
@@ -79,9 +103,7 @@
 							</li>
 						</ul>
 					</p>
-					<p>
-					Esta seria una breve presentacion sobre mi
-					</p>
+					<p>Esta seria una breve presentacion sobre mi</p>
 						
 				</section>
 
@@ -93,7 +115,18 @@
 	<footer>
 
 		<p>Alex Llinares (c) 2025</p>
-
+		
+		<nav>
+			<ul>
+			
+				<li><a href="index.html">Home</a></li>
+				<li><a href="CV.html">CV</a></li>
+				<li><a href="hobbies.html">Hobbies</a></li>
+				<li><a href="contact.html">Contacto</a></li>
+			</ul>
+			
+	
+		</nav>
 	</footer>
 
 </body>
