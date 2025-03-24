@@ -1,87 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-   <title>Document</title>
-   <head>
-    <title>Alex Llinares</title>
-    <style>
-        h1{
-            color: #0244ff;
-            font-size: 32 px;
-            font-family: sans-serif;
-            border: 3px solid #56a1bd;
-            margin-top: 20px;
-            text-align: center;
-            
-        }
-        h2  {
-            font-family: sans-serif;
-        }
-
-        a{
-        
-            color:#a42984 ;
-        }
-
-        header{
-            display: flex;
-            flex-direction: column-reverse;
-        }
-        header nav ul{
-            display: flex;
-            justify-content: space-evenly;
-            list-style: none;
-            display: flex;
-            padding : 0;
-            margin: 0;
-        }
-        footer nav  ul{
-			display: flex;
-			justify-content: space-evenly;
-			list-style: none;
-			display: flex;
-			padding : 0;
-			margin: 0;
-			margin-top: 10px;
-	}
-
-    </style>
-
-</head>
-<header>
-    <h1>Alex Llinares</h1>
-    <p>Estudiante de <strong>ENTI
-    <em>ASIX ciber</em></strong></p>
-    
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="CV.html">CV</a></li>
-            <li><a href="hobbies.html">Hobbies</a></li>
-            <li><a href="contact.html">Contacto</a></li>
-        </ul>
-    </nav>
-</header>
-
+    <title>Alex</title>
+    <link rel="stylesheet" href="estilos.css" />
 </head>
 <body>
+    <header>
+        <h1>Alex Llinares</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="CV.html">CV</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="microjuego.html">Micro juego</a></li>            
+            </ul>
+        </nav>
+    </header>
     <main>
+        <h2>Contacto</h2>
+        <form action="/enviar-datos" method="post">
+            <p><label for="campo-nombre">Nombre </label>
+            <input type="text" name="nombre" id="campo-nombre" /></p>
 
+            <p><label for="campo-password">Contraseña </label>
+            <input type="password" name="contrasenya" id="campo-password" /></p>
+
+            <p><label for="campo-edad">Edad </label>
+            <input type="number" id="campo-edad" min="1" max="120" value="0" /></p>
+
+            <p><label for="campo-fecha">Fecha de nacimiento </label>
+            <input type="date" name="fecha-nacimiento" id="campo-fecha" /></p>
+
+            <p><label for="campo-color">Color favorito </label>
+            <input type="color" name="color" id="campo-color" /></p>
+
+            <p><input type="submit" value="Enviar"></p>
+        </form>
     </main>
     <footer>
-
-		<p>Alex Llinares (c) 2025</p>
-		
-		<nav>
-			<ul>
-			
-				<li><a href="index.html">Home</a></li>
-				<li><a href="CV.html">CV</a></li>
-				<li><a href="hobbies.html">Hobbies</a></li>
-				<li><a href="contact.html">Contacto</a></li>
-			</ul>
-			
-		</nav>
-	</footer>
+        <p>Alex Llinares (c) 2025</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="CV.html">CV</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="microjuego.html">Micro juego</a></li>            
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>
