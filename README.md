@@ -2,7 +2,7 @@
 
 A continuación podremos ver diferentes estructuras de formularios que hemos usado.
 
-## Tipos de lista
+## Tipos de formularios
 
 1. **Formulario de texto**  
    Este permite al usuario introducir texto libremente.  
