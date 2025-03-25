@@ -2,7 +2,7 @@
 
 A continuación podremos ver diferentes estructuras de formularios que hemos usado.
 
-## Tipos de formularios
+## Tipos de lista
 
 1. **Formulario de texto**  
    Este permite al usuario introducir texto libremente.  
@@ -43,4 +43,5 @@ A continuación podremos ver diferentes estructuras de formularios que hemos usa
    <p><label for="campo-color">Color favorito </label></p>
    <input type="color" name="color" id="campo-color" />
    ```
-Esto es un subindice: log<sub>2</sub>
+
+   ::

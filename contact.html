@@ -3,6 +3,7 @@
 <head>
     <title>Alex</title>
     <link rel="stylesheet" href="estilos.css" />
+   
 </head>
 <body>
     <header>
@@ -20,22 +21,22 @@
     <main>
         <h2>Contacto</h2>
         <form action="/enviar-datos" method="post">
-            <p><label for="campo-nombre">Nombre </label>
+            <p><label for="campo-nombre">Nombre </label></p>
             <input type="text" name="nombre" id="campo-nombre" /></p>
 
-            <p><label for="campo-password">Contraseña </label>
+            <p><label for="campo-password">Contraseña </label></p>
             <input type="password" name="contrasenya" id="campo-password" /></p>
 
-            <p><label for="campo-edad">Edad </label>
+            <p><label for="campo-edad">Edad </label></p>
             <input type="number" id="campo-edad" min="1" max="120" value="0" /></p>
 
-            <p><label for="campo-fecha">Fecha de nacimiento </label>
+            <p><label for="campo-fecha">Fecha de nacimiento </label></p>
             <input type="date" name="fecha-nacimiento" id="campo-fecha" /></p>
 
-            <p><label for="campo-color">Color favorito </label>
+            <p><label for="campo-color">Color favorito </label></p>
             <input type="color" name="color" id="campo-color" /></p>
 
-            <p><input type="submit" value="Enviar"></p>
+            <p><input type="button" id="field-submit" value="¡Adivina!" onclick="comparar_numero"></p>
         </form>
     </main>
     <footer>

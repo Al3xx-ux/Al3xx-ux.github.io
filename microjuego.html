@@ -4,10 +4,59 @@
     <title>Alex</title>
     <link rel="stylesheet" href="estilos.css" />
 
+    <script>
+        let min_num = 1;
+        let max_num = 100;
+
+        let numero = Math.floor(Math.random() * num_max) + 1;
+        let contador = 0;
+        
+        function comparar_numero() {
+            let my_num_input = document.getElementById("campo-id"); 
+            let my_num = my_num_input.value;
+            my_num = Number(my_num); 
+            
+            let resultado = document.getElementById("resultado");
+    
+            
+            if (my_num == "") {
+                resultado.innerHTML = '<strong class="error">El formulario está vacío !!. Debes introducir un numero entre ' +min_num+ ' o ' +max_num+ '. </strong>';
+                return;
+            } else if (my_num < min_num) {
+                resultado.innerHTML = '<strong class="error">El número debe ser mayor que 0</strong>';
+                return;
+            } else if (my_num > max_num) {
+                resultado.innerHTML = '<strong class="error">El número debe ser menor que 101</strong>';
+                return;
+            }
+    
+            contador++;
+    
+            let field_submit = document.getElementById("field_submit");
+            field_submit.value = "¡Adivina! (errores: " + contador + ")";
+    
+
+            if (my_num > numero) {
+                resultado.innerHTML = '<strong class="error">El número es menor que ' + my_num + '</strong>';
+            } else if (my_num < numero) {
+                resultado.innerHTML = '<strong class="error">El número es mayor que ' + my_num + '</strong>';
+            } else {
+                resultado.innerHTML = '<marquee><strong class="you-win">¡Has acertado!</strong></marquee>';
+            }
+    
+            
+            my_num_input.value = "";
+            my_num_input.focus();
+        }
+    </script>
 </head>
+
+<body>
+
 <header>
     <h1>Alex Llinares</h1>
-    <nav>
+    <nav clas = "navegacion_web">
+    
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="CV.html">CV</a></li>
@@ -17,28 +66,31 @@
         </ul>
     </nav>
 </header>
-<body>
+
 <main>
-    <h2>Micro Juego</h2>
+    <h1 class="titulojuego">Micro Juego</h1>
+    <h2>Adivina el numero que he generado</h2>
+    <p>Este va del numero 1 al numero 100</p>
+    <p id="resultado">Buena suerte</p>
     <p><label for="campo-id">Tu número</label></p>
-    <input type="number" name="id" id="campo-id" /></p>
-
-    <p><input type="submit" value="Send"></p>
-
-   
-
+    <input type="number" id="campo-id" />
+    <input type="button" id="field_submit" value="¡Adivina!" onclick="comparar_numero()">
 </main>
+
 <footer>
-<p>Alex Llinares (c) 2025</p>
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="CV.html">CV</a></li>
-        <li><a href="hobbies.html">Hobbies</a></li>
-        <li><a href="contact.html">Contacto</a></li>
-        <li><a href="microjuego.html">Micro juego</a></li>            
-    </ul>
-</nav>
+    <p>Alex Llinares (c) 2025</p>
+    <nav clas = "navegacion_web">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="CV.html">CV</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+            <li><a href="microjuego.html">Micro juego</a></li>            
+        </ul>
+    </nav>
 </footer>
+
+
+
 </body>
 </html>

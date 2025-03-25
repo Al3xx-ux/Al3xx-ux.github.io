@@ -48,7 +48,6 @@ ul{
 
 strong{
     display: block;
-    border-bottom: 1px dashed;
 }
 
 footer{
@@ -74,4 +73,26 @@ footer nav ul a{
 img{
     width: 400px;
     height: 300px;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 0, 0);
+    padding: 10px;
+    
+}
+
+.navegacion_web{
+    border: 10px solid rgb(56, 0, 0);
+}
+.titulojuego{
+    color: rgb(33, 80, 134);
+    padding: 10px;
+}
+
+.you-win{
+    color: green;
+}
+.error{
+    color: red;
 }
