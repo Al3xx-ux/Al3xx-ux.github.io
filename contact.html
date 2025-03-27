@@ -3,6 +3,38 @@
 <head>
     <title>Alex</title>
     <link rel="stylesheet" href="estilos.css" />
+
+    <script>
+    function validarFormulario() {
+            let nombre = document.getElementById("campo-nombre");
+            let contrasenya = document.getElementById("campo-password");
+            let edad = document.getElementById("campo-edad");
+            let fecha_nacimiento = document.getElementById("campo-fecha");
+            let color = document.getElementById("campo-color");
+            
+
+            if (nombre.value == "") {
+                nombre.classList.add("error_input");
+            }
+        
+            if (contrasenya.value == "") {
+                contrasenya.classList.add("error_input");
+            } 
+        
+            if (edad.value == "") {
+                edad.classList.add("error_input");
+            } 
+        
+            if (fecha_nacimiento.value == "") {
+                fecha_nacimiento.classList.add("error_input");  
+            }         
+            if (color.value == "") {
+                color.classList.add("error_input");
+            } 
+    }       
+
+    </script>
+
    
 </head>
 <body>
@@ -21,22 +53,23 @@
     <main>
         <h2>Contacto</h2>
         <form action="/enviar-datos" method="post">
-            <p><label for="campo-nombre">Nombre </label></p>
+            <p><label for="campo-nombre" id="nombre">Nombre </label></p>
             <input type="text" name="nombre" id="campo-nombre" /></p>
 
-            <p><label for="campo-password">Contraseña </label></p>
+            <p><label for="campo-password" id="contraseña">Contraseña </label></p>
             <input type="password" name="contrasenya" id="campo-password" /></p>
 
-            <p><label for="campo-edad">Edad </label></p>
+            <p><label for="campo-edad" id="edad">Edad </label></p>
             <input type="number" id="campo-edad" min="1" max="120" value="0" /></p>
 
-            <p><label for="campo-fecha">Fecha de nacimiento </label></p>
+            <p><label for="campo-fecha" id="fecha">Fecha de nacimiento </label></p>
             <input type="date" name="fecha-nacimiento" id="campo-fecha" /></p>
 
-            <p><label for="campo-color">Color favorito </label></p>
+            <p><label for="campo-color" id="color">Color favorito </label></p>
             <input type="color" name="color" id="campo-color" /></p>
 
-            <p><input type="button" id="field-submit" value="¡Adivina!" onclick="comparar_numero"></p>
+            <p><input type="submit" id="field-submit" value="Enviar!" onclick="validarFormulario()"></p>
+
         </form>
     </main>
     <footer>

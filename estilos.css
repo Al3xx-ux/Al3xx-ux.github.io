@@ -96,3 +96,8 @@ h1{
 .error{
     color: red;
 }
+
+
+.error_input{
+    border: 1px solid red;
+}
