@@ -6,36 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
 
 
-    <script>
-    function validarFormulario() {
-            let nombre = document.getElementById("campo-nombre");
-            let contrasenya = document.getElementById("campo-password");
-            let edad = document.getElementById("campo-edad");
-            let fecha_nacimiento = document.getElementById("campo-fecha");
-            let color = document.getElementById("campo-color");
-            
-
-            if (nombre.value == "") {
-                nombre.classList.add("error_input");
-            }
-        
-            if (contrasenya.value == "") {
-                contrasenya.classList.add("error_input");
-            } 
-        
-            if (edad.value == "") {
-                edad.classList.add("error_input");
-            } 
-        
-            if (fecha_nacimiento.value == "") {
-                fecha_nacimiento.classList.add("error_input");  
-            }         
-            if (color.value == "") {
-                color.classList.add("error_input");
-            } 
-    }       
-
-    </script>
+    <script src="contact.js"></script>
 
    
 </head>
@@ -65,7 +36,7 @@
 
             <p><label for="campo-fecha" id="fecha">Fecha de nacimiento </label></p>
             <input type="date" name="fecha-nacimiento" id="campo-fecha" /></p>
-
+            
             <p><label for="campo-color" id="color">Color favorito </label></p>
             <input type="color" name="color" id="campo-color" /></p>
 
