@@ -1,0 +1,203 @@
+body{
+    font-family:'Montserrat', sans-serif;
+    background-color:#010409;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color : white;
+}
+
+
+
+img{
+    width: 300px;
+    height: 400px;
+    border-radius: 10px ;
+}
+
+.hobbies_img{
+    width: 400px;
+    height: 300px;
+    border-radius: 10px ;
+    box-shadow: 0 4px 12px rgba(128, 128, 128, 0.5);
+    transition : all 0.5s ease-in-out;
+}   
+.hobbies_img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 24px rgba(128, 128, 128, 0.5);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    border-radius: 50px;
+    
+}
+
+header nav{
+ margin-top: 10px;
+ width: 700px;
+}
+
+header nav ul a{
+    color: rgb(255, 255, 255);
+    display: block; 
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    
+}
+header nav ul a:hover{
+    display: block;
+    color: #ffffff;
+    background-color: rgba(10, 146, 230, 0.5);
+    transition: all 0.5s ease-in-out;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 10px;
+    background-color:rgba(10, 146, 230, 0.5);
+    border-radius: 10px;
+
+}
+
+
+header h1{
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    padding: 5px;
+    margin: 0px;
+    border-bottom: 5px solid #0A92E6;
+}
+
+
+ul{
+    list-style: square;
+}
+
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: reverse;
+    align-items: center;
+    border-top: 2px solid #0A92E6; 
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: relative;
+    width: 100%;
+    
+    
+    
+}
+
+
+.hobbies_vid {
+    width: 300px; 
+    height: auto; 
+    display: block; 
+    background: none; 
+    border: none; 
+    outline: none; 
+    box-shadow: none;
+    
+}
+
+footer nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 10px;
+    background-color: #0A92E6; 
+    border-radius: 5px; 
+}
+
+footer nav ul a{
+    color: rgb(255, 255, 255);
+    display: block; 
+    text-align: center;
+    padding: 7px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+
+}
+
+footer nav ul a:hover{
+   
+    color: #ffffff;
+    background-color: rgba(10, 146, 230, 0.7);
+    transition: all 0.5s ease-in-out;
+    display: block;
+}
+
+h1{
+    display: flex;
+
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    justify-content: center;
+    
+}
+
+
+
+h2,h3{
+    color: #FFFFFF;
+
+}
+
+figcaption{
+    color: #FFFFFF;
+    text-align: justify;
+    font-size: 12px;
+    margin-top: 0;
+   
+}
+
+figcaption a {
+    color :#87CEEB;
+    text-decoration: none;
+
+}
+
+figcaption a:hover{
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+
+
+
+
+.navegacion_web{
+    border: 10px solid rgb(56, 0, 0);
+    border-radius: 10px;
+}
+
+a[href="https://enti.cat/es/"]{
+    color: rgb(255, 255, 255); 
+}
+.you-win{
+    color: green;
+}
+.error{
+    color: red;
+}
+
+
+.error_input{
+    border: 1px solid red;
+}
