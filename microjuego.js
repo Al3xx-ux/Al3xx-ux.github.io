@@ -4,19 +4,24 @@
         let numero = Math.floor(Math.random() * max_num) + 1;
         let contador = 0;
         
+        
    
    
         function comparar_numero() {
+            let field_submit = document.getElementById("field_submit");
+            field_submit.value = "¡Adivina! (errores: " + contador + ")";
+
             let my_num_input = document.getElementById("campo-id"); 
             let my_num = my_num_input.value;
             my_num = Number(my_num); 
-            
             let resultado = document.getElementById("resultado");
+            
             
 
             if (contador >= max_intentos) {
                 resultado.innerHTML = '<strong class="error">¡Has perdido! El número era ' + numero + '</strong>';
                 field_submit.disabled = true;
+                return;
             }
 
 
@@ -34,8 +39,7 @@
     
             contador++;
     
-            let field_submit = document.getElementById("field_submit");
-            field_submit.value = "¡Adivina! (errores: " + contador + ")";
+          
     
 
             if (my_num > numero) {
@@ -47,10 +51,7 @@
 
             } else {
                 resultado.innerHTML = '<marquee><strong class="you-win">¡Has acertado!</strong></marquee>';
-            }
-
-            if (mynum )
-    
+            }    
             
             my_num_input.value = "";
             my_num_input.focus();
