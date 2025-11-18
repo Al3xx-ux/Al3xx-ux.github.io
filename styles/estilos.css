@@ -1,203 +1,198 @@
+:root{
+    /* Dark theme variables */
+    --bg:#0b1114; /* page background */
+    --card:#0f1720; /* card / panels */
+    --accent:#3b82f6; /* accent blue */
+    --muted:#9aa6b2; /* subdued text */
+    --text:#e6eef6; /* main text (light) */
+    --radius:10px;
+    --container:1100px;
+    --glass: rgba(255,255,255,0.03); /* subtle glass on dark */
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
 body{
-    font-family:'Montserrat', sans-serif;
-    background-color:#010409;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    color : white;
-}
-
-
-
-img{
-    width: 300px;
-    height: 400px;
-    border-radius: 10px ;
-}
-
-.hobbies_img{
-    width: 400px;
-    height: 300px;
-    border-radius: 10px ;
-    box-shadow: 0 4px 12px rgba(128, 128, 128, 0.5);
-    transition : all 0.5s ease-in-out;
-}   
-.hobbies_img:hover{
-    transform: scale(1.05);
-    box-shadow: 0 8px 24px rgba(128, 128, 128, 0.5);
-}
-header{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    color: white;
-    border-radius: 50px;
-    
-}
-
-header nav{
- margin-top: 10px;
- width: 700px;
-}
-
-header nav ul a{
-    color: rgb(255, 255, 255);
-    display: block; 
-    text-align: center;
-    padding: 10px;
-    text-decoration: none;
-    border-radius: 10px;
-    
-}
-header nav ul a:hover{
-    display: block;
-    color: #ffffff;
-    background-color: rgba(10, 146, 230, 0.5);
-    transition: all 0.5s ease-in-out;
-}
-
-header nav ul{
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-    padding: 10px;
-    background-color:rgba(10, 146, 230, 0.5);
-    border-radius: 10px;
-
-}
-
-
-header h1{
-    display: flex;
-    justify-content: center;
-    color: rgb(255, 255, 255);
-    font-size: 32px;
-    padding: 5px;
-    margin: 0px;
-    border-bottom: 5px solid #0A92E6;
-}
-
-
-ul{
-    list-style: square;
-}
-
-
-
-footer{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: reverse;
-    align-items: center;
-    border-top: 2px solid #0A92E6; 
-    position:absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    position: relative;
-    width: 100%;
-    
-    
-    
-}
-
-
-.hobbies_vid {
-    width: 300px; 
-    height: auto; 
-    display: block; 
-    background: none; 
-    border: none; 
-    outline: none; 
-    box-shadow: none;
-    
-}
-
-footer nav ul{
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-    padding: 10px;
-    background-color: #0A92E6; 
-    border-radius: 5px; 
-}
-
-footer nav ul a{
-    color: rgb(255, 255, 255);
-    display: block; 
-    text-align: center;
-    padding: 7px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: all 0.5s ease-in-out;
-
-}
-
-footer nav ul a:hover{
-   
-    color: #ffffff;
-    background-color: rgba(10, 146, 230, 0.7);
-    transition: all 0.5s ease-in-out;
-    display: block;
-}
-
-h1{
-    display: flex;
-
-    color: rgb(255, 255, 255);
-    padding: 10px;
-    justify-content: center;
-    
-}
-
-
-
-h2,h3{
-    color: #FFFFFF;
-
-}
-
-figcaption{
-    color: #FFFFFF;
-    text-align: justify;
-    font-size: 12px;
-    margin-top: 0;
-   
-}
-
-figcaption a {
-    color :#87CEEB;
-    text-decoration: none;
-
-}
-
-figcaption a:hover{
-    color: #FFFFFF;
-    text-decoration: underline;
+    margin:0;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    background-color:var(--bg);
+    color:var(--text);
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+    -webkit-font-smoothing:antialiased;
+    line-height:1.45;
+    font-size:16px;
 }
 
 
 
 
 
-.navegacion_web{
-    border: 10px solid rgb(56, 0, 0);
-    border-radius: 10px;
+#img{max-width:100%;height:auto;border-radius:var(--radius)}
+
+#quiensoy figure img{width:320px;max-width:85vw;height:auto;border-radius:10px;object-fit:contain}
+
+#quiensoy .profile{display:flex;flex-direction:column;gap:8px;align-items:center}
+#quiensoy .profile figure{margin:0}
+#quiensoy .profile .profile-text{max-width:70ch}
+
+#quiensoy > section > p:last-of-type{margin-top:0;margin-bottom:2px}
+#quiensoy > section > ul{margin-top:2px;margin-bottom:6px;padding-left:1.15rem}
+@media(min-width:720px){
+    #quiensoy .profile{flex-direction:row-reverse;align-items:center;gap:28px}
+}
+@media(min-width:820px){
+    #quiensoy .profile{flex-direction:row;align-items:center}
+    #quiensoy .profile figure{flex:0 0 320px}
+    #quiensoy .profile .profile-text{flex:1}
 }
 
-a[href="https://enti.cat/es/"]{
-    color: rgb(255, 255, 255); 
+
+.hobbies_img{width:100%;height:auto;border-radius:8px;box-shadow:0 8px 20px rgba(15,23,36,0.06);transition:transform .2s ease,box-shadow .2s ease}
+.hobbies_img:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(15,23,36,0.08)}
+
+header{background:transparent;padding:22px 12px}
+
+.container{max-width:var(--container);margin:0 auto;padding:0 16px}
+
+
+.site-header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.site-title{margin:0;font-size:1.25rem;font-weight:600;color:var(--text)}
+.site-title .brand-accent{color:var(--accent)}
+
+nav ul{display:flex;gap:10px;list-style:none;margin:0;padding:6px}
+nav a{color:var(--text);text-decoration:none;padding:8px 12px;border-radius:8px;display:inline-block}
+nav a:hover{background:var(--glass)}
+
+
+main{flex:1;padding:28px 12px}
+
+.hero{padding:24px 0 8px;text-align:left}
+.hero h1{margin:0;font-size:2rem;font-weight:700}
+.lead{color:var(--muted);max-width:70ch;margin-top:4px}
+
+/* Compact spacing: make paragraphs, headings and lists inside the main content have a small, consistent gap
+   so the visual spacing is equivalent to one (or at most two) blank lines. */
+main p,
+main h1,
+main h2,
+main h3,
+main h4,
+.profile-text p,
+#quiensoy > section > p {
+    margin: 0 0 0.4rem 0; /* small bottom margin, zero top */
 }
-.you-win{
-    color: green;
-}
-.error{
-    color: red;
+
+/* Lists inside main: small top/bottom margins and compact list items */
+main ul,
+#quiensoy > section > ul { margin: 0 0 0.4rem 1.15rem; padding: 0; }
+main ul li { margin: 0 0 0.25rem 0; }
+
+
+ul{line-height:1.6}
+
+.grid-two{display:grid;grid-template-columns:1fr;gap:20px}
+.card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,36,0.06)}
+
+@media(min-width:900px){
+    .grid-two{grid-template-columns:1fr 1fr}
 }
 
 
-.error_input{
-    border: 1px solid red;
+.centered{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center;max-width:680px;margin:18px auto;padding:18px}
+.centered input[type="number"]{width:120px;padding:8px;border-radius:8px;border:1px solid rgba(15,23,36,0.08)}
+.centered input[type="button"]{padding:8px 14px;border-radius:8px;background:var(--accent);color:#fff;border:none;cursor:pointer}
+.centered #resultado{font-weight:600}
+
+
+
+
+footer{border-top:1px solid rgba(15,23,36,0.06);padding:36px 12px;background:transparent}
+
+footer .footer-grid{display:flex;align-items:center;justify-content:space-between;gap:22px;flex-wrap:wrap}
+
+
+.social-list{display:flex;gap:12px;align-items:center;padding:0;margin:0;list-style:none}
+.social-list a{display:inline-flex;align-items:center;gap:8px;padding:8px 10px;border-radius:8px;background:var(--glass);color:var(--text);text-decoration:none}
+.social-list a svg{display:block}
+.social-list a:hover{background:rgba(37,99,235,0.08);transform:translateY(-2px)}
+
+@media(max-width:720px){
+    footer .footer-grid{flex-direction:column;align-items:center;gap:10px}
 }
+
+/* Smaller footer on the hobbies page to avoid large whitespace */
+.hobbies-page footer{padding:14px 12px}
+
+/* Extra compact footer for hobbies page */
+.hobbies-page footer{padding:8px 12px}
+.hobbies-page footer .footer-grid{gap:8px;align-items:center}
+.hobbies-page footer p{font-size:13px;margin:0;color:var(--muted)}
+.hobbies-page .social-list a{padding:6px 8px}
+
+
+.hobbies_vid{width:100%;height:auto;display:block;border-radius:8px;overflow:hidden}
+
+/* Smaller, centered video variant for hobbies */
+.hobbies_vid--small{max-width:320px;width:100%;margin:14px 0;border-radius:8px;box-shadow:0 12px 30px rgba(15,23,36,0.08)}
+
+footer nav ul{display:flex;gap:8px;list-style:none;margin:0;padding:0}
+footer nav a{color:var(--text);text-decoration:none;padding:6px 8px;border-radius:6px}
+footer .footer-links a{color:var(--muted)}
+
+h1{color:var(--text)}
+
+
+
+h2,h3{color:var(--text);margin-top:0}
+
+figcaption{color:var(--muted);font-size:13px;margin-top:4px}
+figcaption a{color:var(--muted);text-decoration:none}
+figcaption a:hover{text-decoration:underline}
+
+
+
+
+
+.navegacion_web{border:10px solid rgba(128,0,0,0.12);border-radius:var(--radius)}
+.you-win{color:limegreen}.error{color:#ff6b6b}.error_input{border:1px solid #ff6b6b}
+
+.contact-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px}
+.contact-list a{display:inline-flex;align-items:center;gap:10px;padding:8px 10px;border-radius:8px;background:var(--card);color:var(--text);text-decoration:none;box-shadow:0 6px 18px rgba(15,23,36,0.04)}
+.contact-list a svg{flex:0 0 24px}
+
+@media(min-width:720px){
+    /* On wide screens show image at right of text */
+    #quiensoy .profile{flex-direction:row-reverse;align-items:center}
+    #quiensoy .profile{flex-direction:row-reverse;align-items:center;gap:28px}
+    #quiensoy .profile figure{flex:0 0 320px}
+    #quiensoy .profile figure img{width:320px;height:auto;border-radius:12px;object-fit:contain;border:1px solid rgba(37,99,235,0.08);box-shadow:0 8px 18px rgba(15,23,36,0.08)}
+    nav ul{gap:12px}
+}
+
+@media(min-width:1000px){
+    .site-header{padding:6px 0}
+}
+
+/* Strong override: enforce compact spacing inside the main content and #quiensoy.
+   Using !important to override any other margins so the visual spacing becomes
+   equivalent to one or two blank lines as requested. */
+#quiensoy h1, #quiensoy h2, #quiensoy h3, #quiensoy h4, #quiensoy p, #quiensoy figure, #quiensoy figcaption, #quiensoy ul, #quiensoy ol {
+    margin-top: 0 !important;
+    margin-bottom: 0.6rem !important;
+}
+#quiensoy ul, #quiensoy ol { margin-left: 1.15rem !important; padding-left: 0 !important; }
+#quiensoy li { margin-bottom: 0.25rem !important; }
+
+/* Emergency: very tight spacing override to ensure content is compact as requested.
+   This will set almost-zero margins and a tighter line-height for everything
+   under #quiensoy and main paragraphs. If you still see no change, try a
+   hard refresh (Ctrl+F5) or clear browser cache, and confirm whether you're
+   viewing the local file or a deployed version. */
+#quiensoy, #quiensoy * { line-height: 1.18 !important; }
+#quiensoy p, #quiensoy h1, #quiensoy h2, #quiensoy h3, #quiensoy h4, #quiensoy figure, #quiensoy figcaption, #quiensoy ul, #quiensoy ol {
+    margin-top: 0 !important;
+    margin-bottom: 0.25rem !important;
+}
+main p, main h1, main h2, main h3, main h4 { line-height:1.18 !important; margin-top:0 !important; margin-bottom:0.25rem !important; }
